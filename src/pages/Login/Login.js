@@ -1,7 +1,6 @@
 import React from 'react';
 import {
   Container,
-  Box,
   Title,
   LogoImg,
   UsrImg,
@@ -17,13 +16,13 @@ import userImg from '../../assets/images/UserImg.svg';
 export default function Login() {
   return (
     <Container>
-      <Box>
+      <Container primary>
         <Title>W Servers Monitor</Title>
         <LogoImg src={logo} alt="logo" />
-      </Box>
+      </Container>
       <LoginForm>
         <UsrImg src={userImg} />
-        <Input placeholder="Nome" />
+        <Input pla="Nome" />
         <Input type="password" placeholder="Senha" />
         <Btn>Entrar</Btn>
         <Link href="/">Esqueceu a sua senha?</Link>

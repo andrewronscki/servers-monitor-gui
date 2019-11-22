@@ -5,16 +5,9 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-`;
-export const Box = styled.div`
-  margin: 20px;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-  /* background-color: #fff; */
+  justify-content: ${props => (props.primary ? 'center' : 'space-between')};
+  margin: ${props => (props.primary ? '20px' : '0px')};
+  padding: ${props => (props.primary ? '20px' : '0px')};
 `;
 
 export const Title = styled.h1`
@@ -26,7 +19,7 @@ export const Title = styled.h1`
 `;
 
 export const LogoImg = styled.img`
-  height: 80%;
+  height: 100px;
 `;
 
 export const UsrImg = styled.img`
